@@ -1,0 +1,135 @@
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana
+$ git init
+Initialized empty Git repository in D:/sinchana/.git/
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana (master)
+$ git config --global user.name "BVSINCHANA-16"
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana (master)
+$ git config --global user.email "sinchanabveeresh@gmail.com"
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana (master)
+$ git clone https://github.com/BVSINCHANA-16/sinchana12.git
+Cloning into 'sinchana12'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana (master)
+$ ls
+sinchana12/
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana (master)
+$ cd sinchana
+bash: cd: sinchana: No such file or directory
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana (master)
+$ cd sinchana12
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana/sinchana12 (main)
+$ vi one.c
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana/sinchana12 (main)
+$ ls
+README.md  one.c
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana/sinchana12 (main)
+$ git add one.c
+warning: in the working copy of '
+one.c', LF will be replaced by CR
+LF the next time Git touches it
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana/sinchana12 (main)
+$ git status
+On branch main
+Your branch is up to date with 'o
+rigin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <fil
+e>..." to unstage)
+        new file:   one.c
+
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana/sinchana12 (main)
+$ git commit -m "create one.c"
+[main 14c3c8e] create one.c
+ 1 file changed, 1 insertion(+)
+ create mode 100644 one.c
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana/sinchana12 (main)
+$ git branch
+* main
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana/sinchana12 (main)
+$ git branch b1
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana/sinchana12 (main)
+$ git branch b2
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana/sinchana12 (main)
+$ git branch
+  b1
+  b2
+* main
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana/sinchana12 (main)
+$ git checkout b1
+Switched to branch 'b1'
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana/sinchana12 (b1)
+$ echo "in branch b1" >> lab3.c
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana/sinchana12 (b1)
+$ git add lab3.c
+warning: in the working copy of '
+lab3.c', LF will be replaced by C
+RLF the next time Git touches it
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana/sinchana12 (b1)
+$ git commit -m "lab3 for b1"
+[b1 85ed41e] lab3 for b1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 lab3.c
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana/sinchana12 (b1)
+$ git checkout master
+error: pathspec 'master' did not
+match any file(s) known to git
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana/sinchana12 (b1)
+$ git checkout b2
+Switched to branch 'b2'
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana/sinchana12 (b2)
+$ git merge b1
+Updating 14c3c8e..85ed41e
+Fast-forward
+ lab3.c | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 lab3.c
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana/sinchana12 (b2)
+$ git branch -d b2
+error: cannot delete branch 'b2'
+used by worktree at 'D:/sinchana/
+sinchana12'
+
+LENOVO@DESKTOP-QRGI95V MINGW64 /d/sinchana/sinchana12 (b2)
+$ git branch -d b1
+info: please complete authentication in your browser...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
